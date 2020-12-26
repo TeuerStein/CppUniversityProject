@@ -1,0 +1,14 @@
+//
+// Created by OLEKSANDR SOKOLOV on 12/26/20.
+//
+
+#ifndef CPPUNIVERSITYPROJECT_HERO_H
+#define CPPUNIVERSITYPROJECT_HERO_H
+
+
+class Hero {
+
+};
+
+
+#endif //CPPUNIVERSITYPROJECT_HERO_H

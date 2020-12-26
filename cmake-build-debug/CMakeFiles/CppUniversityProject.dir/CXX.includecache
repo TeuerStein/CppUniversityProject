@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.cpp
+ClassesOfHeroes.h
+/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.h
+
+/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.h
+iostream
+-
+
+/Users/oleksandrsokolov/Desktop/CppUniversityProject/main.cpp
+iostream
+-
+Models/ClassesOfHeroes.h
+/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.h
+

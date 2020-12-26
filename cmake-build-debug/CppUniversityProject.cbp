@@ -78,6 +78,42 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.cpp">
+			<Option target="CppUniversityProject"/>
+		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.h">
+			<Option target="CppUniversityProject"/>
+		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DefaultMobs.cpp">
+			<Option target="CppUniversityProject"/>
+		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DefaultMobs.h">
+			<Option target="CppUniversityProject"/>
+		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DungeonBoss.cpp">
+			<Option target="CppUniversityProject"/>
+		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DungeonBoss.h">
+			<Option target="CppUniversityProject"/>
+		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/EpicMobs.cpp">
+			<Option target="CppUniversityProject"/>
+		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/EpicMobs.h">
+			<Option target="CppUniversityProject"/>
+		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/Hero.cpp">
+			<Option target="CppUniversityProject"/>
+		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/Hero.h">
+			<Option target="CppUniversityProject"/>
+		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.cpp">
+			<Option target="CppUniversityProject"/>
+		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.h">
+			<Option target="CppUniversityProject"/>
+		</Unit>
 		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/main.cpp">
 			<Option target="CppUniversityProject"/>
 		</Unit>

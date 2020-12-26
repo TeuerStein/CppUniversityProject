@@ -94,12 +94,12 @@ clean: CMakeFiles/CppUniversityProject.dir/clean
 CMakeFiles/CppUniversityProject.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target CppUniversityProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target CppUniversityProject"
 .PHONY : CMakeFiles/CppUniversityProject.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CppUniversityProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CppUniversityProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/CppUniversityProject.dir/rule

@@ -90,17 +90,107 @@ CMakeFiles/CppUniversityProject.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppUniversityProject.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/oleksandrsokolov/Desktop/CppUniversityProject/main.cpp -o CMakeFiles/CppUniversityProject.dir/main.cpp.s
 
+CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.o: CMakeFiles/CppUniversityProject.dir/flags.make
+CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.o: ../Models/ClassesOfHeroes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.o -c /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.cpp
+
+CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.cpp > CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.i
+
+CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.cpp -o CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.s
+
+CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.o: CMakeFiles/CppUniversityProject.dir/flags.make
+CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.o: ../Models/Hero.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.o -c /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/Hero.cpp
+
+CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/Hero.cpp > CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.i
+
+CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/Hero.cpp -o CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.s
+
+CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.o: CMakeFiles/CppUniversityProject.dir/flags.make
+CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.o: ../Models/DefaultMobs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.o -c /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DefaultMobs.cpp
+
+CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DefaultMobs.cpp > CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.i
+
+CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DefaultMobs.cpp -o CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.s
+
+CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.o: CMakeFiles/CppUniversityProject.dir/flags.make
+CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.o: ../Models/EpicMobs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.o -c /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/EpicMobs.cpp
+
+CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/EpicMobs.cpp > CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.i
+
+CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/EpicMobs.cpp -o CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.s
+
+CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.o: CMakeFiles/CppUniversityProject.dir/flags.make
+CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.o: ../Models/DungeonBoss.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.o -c /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DungeonBoss.cpp
+
+CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DungeonBoss.cpp > CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.i
+
+CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DungeonBoss.cpp -o CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.s
+
+CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.o: CMakeFiles/CppUniversityProject.dir/flags.make
+CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.o: ../Models/TypesOfDamage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.o -c /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.cpp
+
+CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.cpp > CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.i
+
+CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.cpp -o CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.s
+
 # Object files for target CppUniversityProject
 CppUniversityProject_OBJECTS = \
-"CMakeFiles/CppUniversityProject.dir/main.cpp.o"
+"CMakeFiles/CppUniversityProject.dir/main.cpp.o" \
+"CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.o" \
+"CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.o" \
+"CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.o" \
+"CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.o" \
+"CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.o" \
+"CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.o"
 
 # External object files for target CppUniversityProject
 CppUniversityProject_EXTERNAL_OBJECTS =
 
 CppUniversityProject: CMakeFiles/CppUniversityProject.dir/main.cpp.o
+CppUniversityProject: CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.o
+CppUniversityProject: CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.o
+CppUniversityProject: CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.o
+CppUniversityProject: CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.o
+CppUniversityProject: CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.o
+CppUniversityProject: CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.o
 CppUniversityProject: CMakeFiles/CppUniversityProject.dir/build.make
 CppUniversityProject: CMakeFiles/CppUniversityProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable CppUniversityProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable CppUniversityProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CppUniversityProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -143,6 +143,168 @@ CppUniversityProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/build
 .PHONY : CppUniversityProject/fast
 
+Models/ClassesOfHeroes.o: Models/ClassesOfHeroes.cpp.o
+
+.PHONY : Models/ClassesOfHeroes.o
+
+# target to build an object file
+Models/ClassesOfHeroes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.o
+.PHONY : Models/ClassesOfHeroes.cpp.o
+
+Models/ClassesOfHeroes.i: Models/ClassesOfHeroes.cpp.i
+
+.PHONY : Models/ClassesOfHeroes.i
+
+# target to preprocess a source file
+Models/ClassesOfHeroes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.i
+.PHONY : Models/ClassesOfHeroes.cpp.i
+
+Models/ClassesOfHeroes.s: Models/ClassesOfHeroes.cpp.s
+
+.PHONY : Models/ClassesOfHeroes.s
+
+# target to generate assembly for a file
+Models/ClassesOfHeroes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.s
+.PHONY : Models/ClassesOfHeroes.cpp.s
+
+Models/DefaultMobs.o: Models/DefaultMobs.cpp.o
+
+.PHONY : Models/DefaultMobs.o
+
+# target to build an object file
+Models/DefaultMobs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.o
+.PHONY : Models/DefaultMobs.cpp.o
+
+Models/DefaultMobs.i: Models/DefaultMobs.cpp.i
+
+.PHONY : Models/DefaultMobs.i
+
+# target to preprocess a source file
+Models/DefaultMobs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.i
+.PHONY : Models/DefaultMobs.cpp.i
+
+Models/DefaultMobs.s: Models/DefaultMobs.cpp.s
+
+.PHONY : Models/DefaultMobs.s
+
+# target to generate assembly for a file
+Models/DefaultMobs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.s
+.PHONY : Models/DefaultMobs.cpp.s
+
+Models/DungeonBoss.o: Models/DungeonBoss.cpp.o
+
+.PHONY : Models/DungeonBoss.o
+
+# target to build an object file
+Models/DungeonBoss.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.o
+.PHONY : Models/DungeonBoss.cpp.o
+
+Models/DungeonBoss.i: Models/DungeonBoss.cpp.i
+
+.PHONY : Models/DungeonBoss.i
+
+# target to preprocess a source file
+Models/DungeonBoss.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.i
+.PHONY : Models/DungeonBoss.cpp.i
+
+Models/DungeonBoss.s: Models/DungeonBoss.cpp.s
+
+.PHONY : Models/DungeonBoss.s
+
+# target to generate assembly for a file
+Models/DungeonBoss.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.s
+.PHONY : Models/DungeonBoss.cpp.s
+
+Models/EpicMobs.o: Models/EpicMobs.cpp.o
+
+.PHONY : Models/EpicMobs.o
+
+# target to build an object file
+Models/EpicMobs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.o
+.PHONY : Models/EpicMobs.cpp.o
+
+Models/EpicMobs.i: Models/EpicMobs.cpp.i
+
+.PHONY : Models/EpicMobs.i
+
+# target to preprocess a source file
+Models/EpicMobs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.i
+.PHONY : Models/EpicMobs.cpp.i
+
+Models/EpicMobs.s: Models/EpicMobs.cpp.s
+
+.PHONY : Models/EpicMobs.s
+
+# target to generate assembly for a file
+Models/EpicMobs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.s
+.PHONY : Models/EpicMobs.cpp.s
+
+Models/Hero.o: Models/Hero.cpp.o
+
+.PHONY : Models/Hero.o
+
+# target to build an object file
+Models/Hero.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.o
+.PHONY : Models/Hero.cpp.o
+
+Models/Hero.i: Models/Hero.cpp.i
+
+.PHONY : Models/Hero.i
+
+# target to preprocess a source file
+Models/Hero.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.i
+.PHONY : Models/Hero.cpp.i
+
+Models/Hero.s: Models/Hero.cpp.s
+
+.PHONY : Models/Hero.s
+
+# target to generate assembly for a file
+Models/Hero.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.s
+.PHONY : Models/Hero.cpp.s
+
+Models/TypesOfDamage.o: Models/TypesOfDamage.cpp.o
+
+.PHONY : Models/TypesOfDamage.o
+
+# target to build an object file
+Models/TypesOfDamage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.o
+.PHONY : Models/TypesOfDamage.cpp.o
+
+Models/TypesOfDamage.i: Models/TypesOfDamage.cpp.i
+
+.PHONY : Models/TypesOfDamage.i
+
+# target to preprocess a source file
+Models/TypesOfDamage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.i
+.PHONY : Models/TypesOfDamage.cpp.i
+
+Models/TypesOfDamage.s: Models/TypesOfDamage.cpp.s
+
+.PHONY : Models/TypesOfDamage.s
+
+# target to generate assembly for a file
+Models/TypesOfDamage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.s
+.PHONY : Models/TypesOfDamage.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +341,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CppUniversityProject"
+	@echo "... Models/ClassesOfHeroes.o"
+	@echo "... Models/ClassesOfHeroes.i"
+	@echo "... Models/ClassesOfHeroes.s"
+	@echo "... Models/DefaultMobs.o"
+	@echo "... Models/DefaultMobs.i"
+	@echo "... Models/DefaultMobs.s"
+	@echo "... Models/DungeonBoss.o"
+	@echo "... Models/DungeonBoss.i"
+	@echo "... Models/DungeonBoss.s"
+	@echo "... Models/EpicMobs.o"
+	@echo "... Models/EpicMobs.i"
+	@echo "... Models/EpicMobs.s"
+	@echo "... Models/Hero.o"
+	@echo "... Models/Hero.i"
+	@echo "... Models/Hero.s"
+	@echo "... Models/TypesOfDamage.o"
+	@echo "... Models/TypesOfDamage.i"
+	@echo "... Models/TypesOfDamage.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
