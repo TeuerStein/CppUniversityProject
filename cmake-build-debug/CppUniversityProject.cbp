@@ -114,6 +114,9 @@
 		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.h">
 			<Option target="CppUniversityProject"/>
 		</Unit>
+		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Views/Home.cpp">
+			<Option target="CppUniversityProject"/>
+		</Unit>
 		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/main.cpp">
 			<Option target="CppUniversityProject"/>
 		</Unit>

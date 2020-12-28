@@ -305,6 +305,33 @@ Models/TypesOfDamage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.s
 .PHONY : Models/TypesOfDamage.cpp.s
 
+Views/Home.o: Views/Home.cpp.o
+
+.PHONY : Views/Home.o
+
+# target to build an object file
+Views/Home.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Views/Home.cpp.o
+.PHONY : Views/Home.cpp.o
+
+Views/Home.i: Views/Home.cpp.i
+
+.PHONY : Views/Home.i
+
+# target to preprocess a source file
+Views/Home.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Views/Home.cpp.i
+.PHONY : Views/Home.cpp.i
+
+Views/Home.s: Views/Home.cpp.s
+
+.PHONY : Views/Home.s
+
+# target to generate assembly for a file
+Views/Home.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CppUniversityProject.dir/build.make CMakeFiles/CppUniversityProject.dir/Views/Home.cpp.s
+.PHONY : Views/Home.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -359,6 +386,9 @@ help:
 	@echo "... Models/TypesOfDamage.o"
 	@echo "... Models/TypesOfDamage.i"
 	@echo "... Models/TypesOfDamage.s"
+	@echo "... Views/Home.o"
+	@echo "... Views/Home.i"
+	@echo "... Views/Home.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

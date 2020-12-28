@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/EpicMobs.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.o"
   "/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/Hero.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.o"
   "/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.o"
+  "/Users/oleksandrsokolov/Desktop/CppUniversityProject/Views/Home.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Views/Home.cpp.o"
   "/Users/oleksandrsokolov/Desktop/CppUniversityProject/main.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

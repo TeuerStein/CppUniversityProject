@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.o"
   "CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.o"
   "CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.o"
+  "CMakeFiles/CppUniversityProject.dir/Views/Home.cpp.o"
   "CMakeFiles/CppUniversityProject.dir/main.cpp.o"
   "CppUniversityProject"
   "CppUniversityProject.pdb"

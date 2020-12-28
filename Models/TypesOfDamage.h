@@ -8,13 +8,15 @@
 #define CPPUNIVERSITYPROJECT_TYPESOFDAMAGE_H
 
 namespace Model{
-    struct TypesOfDamage{
+    class TypesOfDamage{
         // Structure for creating types
         // of damage for all of game classes
 
-        static inline const std::string phisical = "Phisical";
-        static inline const std::string magical = "Magical";
-    } typeOfDamage_t;
+        public:
+            std::string phisical = "Phisical";
+            std::string magical = "Magical";
+
+    };
 }
 
 #endif //CPPUNIVERSITYPROJECT_TYPESOFDAMAGE_H

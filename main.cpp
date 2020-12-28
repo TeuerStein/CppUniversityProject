@@ -1,10 +1,9 @@
 #include <iostream>
 #include "Models/ClassesOfHeroes.cpp"
-
-using namespace DungeonMaster;
+#include "Views/Home.cpp"
 
 int main() {
-
-    return 0;
+    Views::home();
+    return 0;               
 }
 
