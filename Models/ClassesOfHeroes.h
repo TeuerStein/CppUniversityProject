@@ -10,12 +10,12 @@
 #define CPPUNIVERSITYPROJECT_CLASSESOFHEROES_H
 
 namespace Model {
-    class Warrior: TypesOfDamage { // * TEST STATE OF *
+    class Warrior: TypesOfDamage {
         // Class for getting a Warrior class
         // of hero like a game champ
 
         // Init all variables what we need for
-        std::string nameOfClass;
+        std::string nameOfClass = "Warrior";
         int baseDamage;
         int baseHealth;
         int baseArmor;
@@ -25,12 +25,13 @@ namespace Model {
         // Getting all variables into constructor
         // for creating a warrior with unique stats
 
-        void ConstructorForWarriorModel() {
-            nameOfClass = "Warrior";
+	TypesOfDamage typesOfDamage;
+
+        void constructor_for_warrior_model() {
             baseDamage = (rand() % 13) + 2;
             baseHealth = (rand() % 10) + 40;
             baseArmor = (rand() % 10) + 25;
-            typeOfDamage = phisical;
+            typeOfDamage = typesOfDamage.set_a_phisical_type_of_damage();;
 
             return;
         }

@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.o"
-  "/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DefaultMobs.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.o"
-  "/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DungeonBoss.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.o"
-  "/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/EpicMobs.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.o"
-  "/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/Hero.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.o"
-  "/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.o"
-  "/Users/oleksandrsokolov/Desktop/CppUniversityProject/Views/Home.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Views/Home.cpp.o"
-  "/Users/oleksandrsokolov/Desktop/CppUniversityProject/main.cpp" "/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/main.cpp.o"
+  "/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/ClassesOfHeroes.cpp" "/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/ClassesOfHeroes.cpp.o"
+  "/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/DefaultMobs.cpp" "/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/DefaultMobs.cpp.o"
+  "/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/DungeonBoss.cpp" "/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/DungeonBoss.cpp.o"
+  "/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/EpicMobs.cpp" "/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/EpicMobs.cpp.o"
+  "/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/Hero.cpp" "/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/Hero.cpp.o"
+  "/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/TypesOfDamage.cpp" "/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Models/TypesOfDamage.cpp.o"
+  "/Users/oleksandrsokolov/Projects/CppUniversityProject/Views/Home.cpp" "/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/Views/Home.cpp.o"
+  "/Users/oleksandrsokolov/Projects/CppUniversityProject/main.cpp" "/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

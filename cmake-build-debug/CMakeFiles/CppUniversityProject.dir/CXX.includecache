@@ -6,35 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.cpp
+/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/ClassesOfHeroes.cpp
 ClassesOfHeroes.h
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.h
+/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/ClassesOfHeroes.h
 
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.h
+/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/ClassesOfHeroes.h
 iostream
 -
 stdlib.h
 -
 TypesOfDamage.cpp
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.cpp
+/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/TypesOfDamage.cpp
 
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.cpp
+/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/TypesOfDamage.cpp
 TypesOfDamage.h
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.h
+/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/TypesOfDamage.h
 
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.h
+/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/TypesOfDamage.h
 iostream
 -
 
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/Views/Home.cpp
+/Users/oleksandrsokolov/Projects/CppUniversityProject/Views/Home.cpp
 iostream
 -
 
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/main.cpp
+/Users/oleksandrsokolov/Projects/CppUniversityProject/main.cpp
 iostream
 -
 Models/ClassesOfHeroes.cpp
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.cpp
+/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/ClassesOfHeroes.cpp
 Views/Home.cpp
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/Views/Home.cpp
+/Users/oleksandrsokolov/Projects/CppUniversityProject/Views/Home.cpp
 

@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug"/>
+				<Option working_dir="/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug"/>
+				<Option working_dir="/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug"/>
+				<Option working_dir="/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CppUniversityProject">
-				<Option output="/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CppUniversityProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug"/>
+				<Option output="/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CppUniversityProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,15 +51,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 CppUniversityProject"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 CppUniversityProject"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CppUniversityProject/fast">
-				<Option output="/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CppUniversityProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug"/>
+				<Option output="/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CppUniversityProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,56 +71,56 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 CppUniversityProject/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 CppUniversityProject/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.cpp">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/ClassesOfHeroes.cpp">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/ClassesOfHeroes.h">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/ClassesOfHeroes.h">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DefaultMobs.cpp">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/DefaultMobs.cpp">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DefaultMobs.h">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/DefaultMobs.h">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DungeonBoss.cpp">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/DungeonBoss.cpp">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/DungeonBoss.h">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/DungeonBoss.h">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/EpicMobs.cpp">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/EpicMobs.cpp">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/EpicMobs.h">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/EpicMobs.h">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/Hero.cpp">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/Hero.cpp">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/Hero.h">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/Hero.h">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.cpp">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/TypesOfDamage.cpp">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Models/TypesOfDamage.h">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Models/TypesOfDamage.h">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/Views/Home.cpp">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/Views/Home.cpp">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/main.cpp">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/main.cpp">
 			<Option target="CppUniversityProject"/>
 		</Unit>
-		<Unit filename="/Users/oleksandrsokolov/Desktop/CppUniversityProject/CMakeLists.txt">
+		<Unit filename="/Users/oleksandrsokolov/Projects/CppUniversityProject/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

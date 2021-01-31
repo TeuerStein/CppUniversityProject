@@ -1,14 +1,7 @@
-//
-// Created by OLEKSANDR SOKOLOV on 12/26/20.
-//
+#include <iostream>
 
-#ifndef CPPUNIVERSITYPROJECT_EPICMOBS_H
-#define CPPUNIVERSITYPROJECT_EPICMOBS_H
-
-
-class EpicMobs {
-
-};
-
-
-#endif //CPPUNIVERSITYPROJECT_EPICMOBS_H
+namespace Models{
+	class Minotaur {
+		
+	};
+}

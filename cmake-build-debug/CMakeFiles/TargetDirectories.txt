@@ -1,3 +1,3 @@
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/oleksandrsokolov/Desktop/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir
+/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/oleksandrsokolov/Projects/CppUniversityProject/cmake-build-debug/CMakeFiles/CppUniversityProject.dir

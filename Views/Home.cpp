@@ -5,7 +5,12 @@
 #include <iostream>
 
 namespace Views {
-    void home () {
-        system("CLS");
-    }
+	void home () {
+		
+	    if (system("CLS")) system("clear");
+
+	    std::cout << "Program was working\n\n";
+
+        
+    	}
 }

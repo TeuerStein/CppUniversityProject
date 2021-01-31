@@ -1,14 +1,17 @@
-//
-// Created by OLEKSANDR SOKOLOV on 12/26/20.
-//
+#include <iostream>
+#include <stdlib.h>
 
-#ifndef CPPUNIVERSITYPROJECT_DEFAULTMOBS_H
-#define CPPUNIVERSITYPROJECT_DEFAULTMOBS_H
+namespace Models{
+	class Murloc {
+		std::string name = "Murloc";
+		int damage;
+		int health;
+		std::string resists = "Magical";
 
-
-class DefaultMobs {
-
-};
-
-
-#endif //CPPUNIVERSITYPROJECT_DEFAULTMOBS_H
+	public:
+		constructor_for_murlocs() {
+			damage = (rand() % 3) + 1;
+			health = (rand() % 4) + 2;
+		}
+	};
+}
