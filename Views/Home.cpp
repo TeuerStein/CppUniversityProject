@@ -16,6 +16,8 @@ namespace Views {
 		hero.set_name_of_hero(Models::get_a_hero_name());
 
 		std::cout << "Name of Hero is: " << hero.get_name_of_hero() << "\n\n";
+
+		hero.set_class_of_hero(Models::get_a_class_of_hero());
         
     	}
 }

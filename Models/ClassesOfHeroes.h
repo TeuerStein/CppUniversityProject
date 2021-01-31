@@ -25,7 +25,7 @@ namespace Models {
             baseDamage = (rand() % 13) + 2;
             baseHealth = (rand() % 10) + 40;
             baseArmor = (rand() % 10) + 25;
-            typeOfDamage = set_a_phisical_type_of_damage();;
+            typeOfDamage = set_a_phisical_type_of_damage();
 
             return;
         }
