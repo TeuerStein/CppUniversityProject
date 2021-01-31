@@ -1,7 +1,3 @@
-                                                                                                            //
-// Created by OLEKSANDR SOKOLOV on 12/26/20.
-//
-
 #include <iostream>
 #include <stdlib.h>
 #include "TypesOfDamage.cpp"
@@ -9,7 +5,7 @@
 #ifndef CPPUNIVERSITYPROJECT_CLASSESOFHEROES_H
 #define CPPUNIVERSITYPROJECT_CLASSESOFHEROES_H
 
-namespace Model {
+namespace Models {
     class Warrior: TypesOfDamage {
         // Class for getting a Warrior class
         // of hero like a game champ
@@ -25,17 +21,15 @@ namespace Model {
         // Getting all variables into constructor
         // for creating a warrior with unique stats
 
-	TypesOfDamage typesOfDamage;
-
-        void constructor_for_warrior_model() {
+        void build_an_warrior() {
             baseDamage = (rand() % 13) + 2;
             baseHealth = (rand() % 10) + 40;
             baseArmor = (rand() % 10) + 25;
-            typeOfDamage = typesOfDamage.set_a_phisical_type_of_damage();;
+            typeOfDamage = set_a_phisical_type_of_damage();;
 
             return;
         }
     };
 }
 
-#endif //CPPUNIVERSITYPROJECT_CLASSESOFHEROES_H
+#endif

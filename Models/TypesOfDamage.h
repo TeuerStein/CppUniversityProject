@@ -1,6 +1,9 @@
 #include <iostream>
 
-namespace Model{
+#ifndef CPPUNIVERSITYPROJECT_TYPESOFDAMAGE_H
+#define CPPUNIVERSITYPROJECT_TYPESOFDAMAGE_H
+
+namespace Models{
     class TypesOfDamage{
         // Class for creating types
         // of damage for all of game classes
@@ -18,3 +21,5 @@ namespace Model{
 		}
     };
 }
+
+#endif
