@@ -29,7 +29,27 @@ namespace Models {
 
             return;
         }
-    };
+
+	std::string get_name_of_class() {
+		return nameOfClass;
+	}
+
+	int get_base_damage() {
+		return baseDamage;
+	}
+
+	int get_base_health() {
+		return baseHealth;
+	}
+
+	int get_base_armor() {
+		return baseArmor;
+	}
+
+	std::string get_type_of_damage() {
+		return typeOfDamage;
+	}
+    };		
 }
 
 #endif
