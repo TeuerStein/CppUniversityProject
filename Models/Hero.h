@@ -37,8 +37,14 @@ namespace Models {
 			} else if(classOfHeroFromInput == '2') {
 				// 2 - Mage
 				//Mage classOfHero;
-				std::cout << "Mage\n";
-
+                Mage classOfHero;
+                set_all_stats_for_hero(
+                        classOfHero.get_name_of_class(),
+                        classOfHero.get_base_damage(),
+                        classOfHero.get_base_health(),
+                        classOfHero.get_base_armor(),
+                        classOfHero.get_type_of_damage()
+                );
 			} else if(classOfHeroFromInput == '3') {
 				// 3 - Archer
 				//Archer classOfHero;
@@ -56,11 +62,35 @@ namespace Models {
 				int baseArmor,
 				std::string typeOfDamageFromBuilder
 		) {
-			nameOfClass = nameOfClassFromBuilder;
-			damage = baseDamage;
-			health = baseHealth;
-			armor = baseArmor;
-			typeOfDamage = typeOfDamageFromBuilder;
+			if(nameOfClassFromBuilder == "") {
+				nameOfClass = "None";
+			} else {
+				nameOfClass = nameOfClassFromBuilder;
+			}
+
+			if(baseDamage > 12 || baseDamage < 2) {
+				damage = 1;
+			} else {
+				damage = baseDamage;
+			}
+
+			if(baseHealth > 50 || baseHealth < 20) {
+				health = 1;
+			} else {
+				health = baseHealth;
+			}
+
+			if(baseArmor > 35 || baseArmor < 5) {
+				armor = 0;
+			} else {
+				armor = baseArmor;
+			}
+
+			if(typeOfDamageFromBuilder == "") {
+				typeOfDamage = "None";
+			} else {
+				typeOfDamage = typeOfDamageFromBuilder;
+			}
 		}
 
 		std::string get_name_of_class() {
