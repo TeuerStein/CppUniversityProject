@@ -13,6 +13,8 @@ namespace Models {
 		int health;
 		int armor;
 		std::string typeOfDamage;
+		int lvl = 1;
+		int exp = 0;
 
 	public:
 		void set_name_of_hero(std::string nameFromInput) {
@@ -46,6 +48,7 @@ namespace Models {
 			} else if(classOfHeroFromInput == "Mage" ||
 					classOfHeroFromInput == "mage") {
 				Mage classOfHero;
+				classOfHero.build_an_mage();
                 		set_all_stats_for_hero(
                         		classOfHero.get_name_of_class(),
                         		classOfHero.get_base_damage(),
@@ -55,11 +58,18 @@ namespace Models {
                 		);
 			} else if(classOfHeroFromInput == "Archer" ||
 					classOfHeroFromInput == "archer") {
-				//Archer classOfHero;
-				std::cout << "Archer\n";
+				Archer classOfHero;
+				classOfHero.build_an_archer();
+				set_all_stats_for_hero(
+					classOfHero.get_name_of_class(),
+					classOfHero.get_base_damage(),
+					classOfHero.get_base_health(),
+					classOfHero.get_base_armor(),
+					classOfHero.get_type_of_damage()
+				);
 
 			} else {
-				std::cout << "Error: You can't choose something deferent than Warrior, Mage or Archer\nPlease, choose something again\n\n";
+				std::cout << "Error: You can't choose something deferent than Warrior, Mage or Archer\n\n";
 			}
 		}
 
@@ -78,7 +88,7 @@ namespace Models {
 				nameOfClass = nameOfClassFromBuilder;
 			}
 
-			if(baseDamage > 12 || baseDamage < 2) {
+			if(baseDamage > 13 || baseDamage < 2) {
 				damage = 1;
 			} else {
 				damage = baseDamage;
@@ -123,6 +133,32 @@ namespace Models {
 
 		std::string get_type_of_damage() {
 			return typeOfDamage;
+		}
+
+		int get_lvl() {
+			return lvl;
+		}
+
+		int get_exp() {
+			return exp;
+		}
+
+		// Setters for lvl & exp
+		void set_lvl(int newLvl){ 
+			lvl = newLvl;
+		}
+
+		void set_exp(int moreExp){
+			exp = moreExp;
+		}
+
+		// Setter for health & armor
+		void set_health(int newHealth) {
+			health = newHealth;
+		}
+
+		void set_armor(int newArmor) {
+			armor = newArmor;
 		}
 	};
 }

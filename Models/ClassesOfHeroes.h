@@ -24,9 +24,9 @@ namespace Models {
         void build_an_warrior() {
 	    // Setter for all empty variables
 
-            baseDamage = (rand() % 3) + 2;
+            baseDamage = (rand() % 3) + 5;
             baseHealth = (rand() % 10) + 40;
-            baseArmor = (rand() % 10) + 25;
+            baseArmor = (rand() % 10) + 5;
             typeOfDamage = get_a_phisical_type_of_damage();
 
             return;
@@ -69,12 +69,12 @@ namespace Models {
         // Getting all variables into constructor
         // for creating a warrior with unique stats
 
-        void build_an_warrior() {
+        void build_an_mage() {
         // Setter for all empty variables
 
-            baseDamage = (rand() % 3) + 6;
+            baseDamage = (rand() % 3) + 9;
             baseHealth = (rand() % 5) + 20;
-            baseArmor = (rand() % 10) + 5;
+            baseArmor = (rand() % 5) + 3;
             typeOfDamage = get_a_magical_type_of_damage();
 
             return;
@@ -117,13 +117,13 @@ namespace Models {
         // Getting all variables into constructor
         // for creating a warrior with unique stats
 
-        void build_an_warrior() {
+        void build_an_archer() {
         // Setter for all empty variables
 
-            baseDamage = (rand() % 6) + 4;
+            baseDamage = (rand() % 6) + 7;
             baseHealth = (rand() % 10) + 40;
-            baseArmor = (rand() % 10) + 15;
-            typeOfDamage = get_a_magical_type_of_damage();
+            baseArmor = (rand() % 5) + 4;
+            typeOfDamage = get_a_phisical_type_of_damage();
 
             return;
         }
