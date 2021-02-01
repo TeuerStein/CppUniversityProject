@@ -7,7 +7,7 @@ namespace Models {
 
     int heroAttackBoss(Hero, DungeonMaster);
 
-    void battle(Hero hero) {
+    int battle(Hero hero) {
         // Function for battle session
         
         int randomMob = (rand() % 3) + 1;
@@ -59,7 +59,7 @@ namespace Models {
                 moreExp += 10000;
                 hero.set_exp(moreExp);
 
-                std::cout << "\nYou take +" << moreExp << "exp\n\n";
+                std::cout << "\nYou take +" << 10000 << "exp\n\n";
 
                 break;
             }
@@ -78,6 +78,8 @@ namespace Models {
         std::cout << "End of Battle\n\n";
         
         hero.set_health(heroHealthBeforeFight);
+
+	return hero.get_exp();
     }
 
     int bossAttack(DungeonMaster dungeonMaster, Hero hero) {
@@ -98,7 +100,8 @@ namespace Models {
             std::cout << "Hero's health: " << heroHealth << "\n";
 
             if(heroHealth <= 0) {
-                std::cout << "You are dead\n";
+                std::cout << "* You are dead *\n";
+		exit(0);
             }
 
             return heroHealth;
@@ -114,11 +117,11 @@ namespace Models {
         // Hero shall miss next attack
         int miss = (rand() % 5) + 1;
         if(miss == 1) {
-            std::cout << "Hero missed\n\n";
+            std::cout << "* Hero missed *\n\n";
             return dungeonMaster.get_health();
         }
 
-        std::cout << "* Get damage to " << dungeonMaster.get_name() << " *\n";
+        std::cout << "* Make the damage for " << dungeonMaster.get_name() << " *\n";
         
         // If hero's type of damage == enemy's type of resist
         // damage from hero will be 1/2
@@ -142,7 +145,7 @@ namespace Models {
             std::cout << "Dungeon Master's health: " << bossHealth << "\n";
 
             if(bossHealth <= 0) {
-                std::cout << "Dungeon Master is dead\n";
+                std::cout << "* Dungeon Master is dead *\n";
             }
 
             return bossHealth;

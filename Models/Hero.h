@@ -160,6 +160,45 @@ namespace Models {
 		void set_armor(int newArmor) {
 			armor = newArmor;
 		}
+
+		// Setter for update hero to another lvl
+		void update_lvl() {
+			if(exp >= 1200 && exp < 2400) {
+				if(lvl < 2) {
+					lvl = 2;
+					lvl_2();
+				}
+			} else if(exp >= 2400 && exp < 3600) {
+				if(lvl < 3) {
+					lvl = 3;
+					lvl_3();
+				}
+			} else if(exp >= 3600) {
+				if(lvl < 4) {
+					lvl = 4;
+					lvl_4();
+				}
+			}
+		}
+
+		void lvl_2() {
+			damage += 35;
+			health += 25;
+			armor += 10;
+		}
+
+		void lvl_3() {
+			damage += 40;
+			health += 35;
+			armor += 12;
+		}
+
+		void lvl_4() {
+			damage += 45;
+			health += 40;
+			armor += 15;
+		}
+
 	};
 }
 

@@ -4,6 +4,8 @@
 #include "../Models/BossBattle.cpp"
 
 namespace Views {
+	void way_chooser(Models::Hero);
+
 	void home() {
 		
 		system("clear");
@@ -27,10 +29,12 @@ namespace Views {
 
 		std::cout << "\t\tLet's go to the dungeon!\n\n\n\n";
 
-        way_chooser();
+        way_chooser(hero);
     }
 
-    void way_chooser() {
+    void way_chooser(Models::Hero hero) {
+
+	hero.update_lvl();
         
         std::cout << "\t\tWhich modifier of Dungeon you wanna choose ?\n\n";
         std::cout << "From 1-4 will be only default/epic mobs\n";
@@ -38,22 +42,29 @@ namespace Views {
         
         int modifierChooser;
         std::cin >> modifierChooser;
+
+	int heroExp;
         
         switch(modifierChooser) {
             case 1:
-                Models::battle(hero, 1);
+                heroExp = Models::battle(hero, 1);
+		hero.set_exp(heroExp);
                 break;
             case 2:
-                Models::battle(hero, 2);
+                heroExp = Models::battle(hero, 2);
+		hero.set_exp(heroExp);
                 break;
             case 3:
-                Models::battle(hero, 3);
+                heroExp = Models::battle(hero, 3);
+		hero.set_exp(heroExp);
                 break;
             case 4:
-                Models::battle(hero, 4);
+                heroExp = Models::battle(hero, 4);
+		hero.set_exp(heroExp);
                 break;
             case 5:
-                Models::battle(hero);
+                heroExp = Models::battle(hero);
+		hero.set_exp(heroExp);
                 break;
         }
         
@@ -62,9 +73,9 @@ namespace Views {
         std::cin >> wayChooser;
         
         if(wayChooser == 'y') {
-            way_chooser();
+            way_chooser(hero);
         } else {
-            return
+            return;
         }
         
     }

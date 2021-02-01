@@ -15,7 +15,7 @@ namespace Models {
 	void hero_stats(Hero);
     void pause(int dur);
 
-	void battle(Hero hero, int modifier) {
+	int battle(Hero hero, int modifier) {
 		// Function for battle session
 		
 		int randomMob = (rand() % 3) + 1;
@@ -70,7 +70,7 @@ namespace Models {
 					moreExp += 100 * modifier;
 					hero.set_exp(moreExp);
 
-                    std::cout << "\nYou take +" << moreExp << "exp\n\n";
+                    		std::cout << "\nYou take +" << 100 * modifier << "exp\n\n";
 
 					break;
 				}
@@ -134,7 +134,7 @@ namespace Models {
                     			moreExp += 100 * modifier;
                     			hero.set_exp(moreExp);
 
-                                std::cout << "\nYou take +" << moreExp << "exp\n\n";
+                                std::cout << "\nYou take +" << 100 * modifier << "exp\n\n";
 
                     			break;
                 		}
@@ -199,7 +199,7 @@ namespace Models {
                     			moreExp += 100 * modifier;
                     			hero.set_exp(moreExp);
 
-                                std::cout << "\nYou take +" << moreExp << "exp\n\n";
+                                std::cout << "\nYou take +" << 100 * modifier << "exp\n\n";
 
                     			break;
                 		}
@@ -219,6 +219,8 @@ namespace Models {
 		}
         
         	hero.set_health(heroHealthBeforeFight);
+
+		return hero.get_exp();
 	}
 
 	int murlocsAttack(Murloc murloc, Hero hero) {
@@ -228,7 +230,7 @@ namespace Models {
 		// Murloc shall miss next attack
 		int miss = (rand() % 5) + 5;
 		if(miss == 6) {
-			std::cout << "Murloc missed\n\n";
+			std::cout << "* Murloc missed *\n\n";
 			return hero.get_health();
 		}
 
@@ -247,7 +249,8 @@ namespace Models {
 			std::cout << "Hero's health: " << heroHealth << "\n";
 
 			if(heroHealth <= 0) {
-				std::cout << "You are dead\n";
+				std::cout << "* You are dead *\n";
+				exit(0);
 			}
 
 			return heroHealth;
@@ -264,7 +267,7 @@ namespace Models {
         // Kobold shall miss next attack
         int miss = (rand() % 7) + 5;
         if(miss == 5) {
-            std::cout << "Kobold missed\n\n";
+            std::cout << "* Kobold missed *\n\n";
             return hero.get_health();
         }
 
@@ -283,7 +286,8 @@ namespace Models {
             std::cout << "Hero's health: " << heroHealth << "\n";
 
             if(heroHealth <= 0) {
-                std::cout << "You are dead\n";
+                std::cout << "* You are dead *\n";
+		exit(0);
             }
 
             return heroHealth;
@@ -299,7 +303,7 @@ namespace Models {
         // Minotaur shall miss next attack
         int miss = (rand() % 5) + 5;
         if(miss == 6) {
-            std::cout << "Minotaur missed\n\n";
+            std::cout << "* Minotaur missed *\n\n";
             return hero.get_health();
         }
 
@@ -318,7 +322,8 @@ namespace Models {
             std::cout << "Hero's health: " << heroHealth << "\n";
 
             if(heroHealth <= 0) {
-                std::cout << "You are dead\n";
+                std::cout << "* You are dead *\n";
+		exit(0);
             }
 
             return heroHealth;
@@ -335,11 +340,11 @@ namespace Models {
 		// Hero shall miss next attack
 		int miss = (rand() % 5) + 1;
 		if(miss == 1) {
-			std::cout << "Hero missed\n\n";
+			std::cout << "* Hero missed *\n\n";
 			return murloc.get_health();
 		}
 
-		std::cout << "* Get damage to " << murloc.get_name() << " *\n";
+		std::cout << "* Make the damage for " << murloc.get_name() << " *\n";
 		
 		// If hero's type of damage == enemy's type of resist
 		// damage from hero will be 1/2
@@ -363,7 +368,7 @@ namespace Models {
 			std::cout << "Murloc's health: " << murlocHealth << "\n";
 
 			if(murlocHealth <= 0) {
-				std::cout << "Murloc is dead\n";
+				std::cout << "* Murloc is dead *\n";
 			}
 
 			return murlocHealth;
@@ -379,11 +384,11 @@ namespace Models {
         // Hero shall miss next attack
         int miss = (rand() % 5) + 1;
         if(miss == 1) {
-            std::cout << "Hero missed\n\n";
+            std::cout << "* Hero missed *\n\n";
             return kobold.get_health();
         }
 
-        std::cout << "* Get damage to " << kobold.get_name() << " *\n";
+        std::cout << "* Make the damage for " << kobold.get_name() << " *\n";
         
         // If hero's type of damage == enemy's type of resist
         // damage from hero will be 1/2
@@ -407,7 +412,7 @@ namespace Models {
             std::cout << "Kobold's health: " << koboldHealth << "\n";
 
             if(koboldHealth <= 0) {
-                std::cout << "Kobold is dead\n";
+                std::cout << "* Kobold is dead *\n";
             }
 
             return koboldHealth;
@@ -423,11 +428,11 @@ namespace Models {
         // Hero shall miss next attack
         int miss = (rand() % 5) + 1;
         if(miss == 1) {
-            std::cout << "Hero missed\n\n";
+            std::cout << "* Hero missed *\n\n";
             return minotaur.get_health();
         }
 
-        std::cout << "* Get damage to " << minotaur.get_name() << " *\n";
+        std::cout << "* Make the damage for " << minotaur.get_name() << " *\n";
         
         // If hero's type of damage == enemy's type of resist
         // damage from hero will be 1/2
@@ -451,7 +456,7 @@ namespace Models {
             std::cout << "Minotaur's health: " << minotaurHealth << "\n";
 
             if(minotaurHealth <= 0) {
-                std::cout << "Minotaur is dead\n";
+                std::cout << "* Minotaur is dead *\n";
             }
 
             return minotaurHealth;

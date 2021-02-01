@@ -6,14 +6,14 @@ namespace Models{
 		int damage;
 		int health;
 		int armor;
-		std::string resists = "Phisical";
+		std::string resists = "None";
 		int lvl = 1;
 
 	public:
 		void build_stats_for_minotaurs() {
 			// Function for build main stats for enemy
 
-			damage = (rand() % 4) + 13;
+			damage = (rand() % 4) + 8;
 			health = (rand() % 4) + 25;
 			armor = (rand() % 3) + 4;
 		}
