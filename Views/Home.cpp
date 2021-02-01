@@ -4,7 +4,7 @@
 #include "../Models/BossBattle.cpp"
 
 namespace Views {
-	void home () {
+	void home() {
 		
 		system("clear");
         
@@ -27,6 +27,11 @@ namespace Views {
 
 		std::cout << "\t\tLet's go to the dungeon!\n\n\n\n";
 
+        way_chooser();
+    }
+
+    void way_chooser() {
+        
         std::cout << "\t\tWhich modifier of Dungeon you wanna choose ?\n\n";
         std::cout << "From 1-4 will be only default/epic mobs\n";
         std::cout << "But 5 - is the boss of Dungeon called 'Dungeon Master'\n\n";
@@ -52,5 +57,15 @@ namespace Views {
                 break;
         }
         
-    	}
+        std::cout << "Are you wanna go further ?\ny/n\t";
+        char wayChooser;
+        std::cin >> wayChooser;
+        
+        if(wayChooser == 'y') {
+            way_chooser();
+        } else {
+            return
+        }
+        
+    }
 }
