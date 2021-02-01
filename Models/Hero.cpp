@@ -2,6 +2,8 @@
 
 namespace Models {
 	std::string get_a_hero_name() {
+		// Function for getting name of Hero
+
 		std::string nameForHero;
 
 		std::cout << "Please, enter a name for your Hero: ";
@@ -16,6 +18,8 @@ namespace Models {
 	}
 
 	std::string get_a_class_of_hero() {
+		// Finction for getting type of class for Hero object
+
 		std::string classOfHero;
 
 		std::cout << "Please, choose class for your Hero: \n\n";

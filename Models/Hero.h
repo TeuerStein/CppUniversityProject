@@ -5,6 +5,8 @@
 
 namespace Models {
 	class Hero {
+		// Main class where we will build Hero for Dungeon
+
 		std::string nameOfHero;
 		std::string nameOfClass;
 		int damage;
@@ -14,14 +16,21 @@ namespace Models {
 
 	public:
 		void set_name_of_hero(std::string nameFromInput) {
+			// Setter for name of Hero
+
 			nameOfHero = nameFromInput;
 		}
 
 		std::string get_name_of_hero() {
+			// Getter for name of Hero
+
 			return nameOfHero;
 		}
 
 		void set_class_of_hero(std::string classOfHeroFromInput) {
+			// Init  classOfHero and set all empty 
+			// variables in set_all_stats_for_hero function
+
 			if(classOfHeroFromInput == "Warrior" ||
 					classOfHeroFromInput == "warrior") {
 				Warrior classOfHero;
@@ -61,6 +70,8 @@ namespace Models {
 				int baseArmor,
 				std::string typeOfDamageFromBuilder
 		) {
+			// Setter for all of empty variables
+
 			if(nameOfClassFromBuilder == "") {
 				nameOfClass = "None";
 			} else {
@@ -92,6 +103,8 @@ namespace Models {
 			}
 		}
 
+	
+		// Getters for name of class & stats
 		std::string get_name_of_class() {
 			return nameOfClass;
 		}

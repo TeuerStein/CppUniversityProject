@@ -12,11 +12,15 @@ namespace Models{
 		std::string phisical = "Phisical";
 		std::string magical = "Magical";
 
-		std::string set_a_phisical_type_of_damage() {
+		std::string get_a_phisical_type_of_damage() {
+			// getter for phisical variable
+
 			return phisical;
 	    	}
 
-		std::string set_a_magical_type_of_damage() {
+		std::string get_a_magical_type_of_damage() {
+			// getter for magical variable
+
 			return magical;
 		}
     };
