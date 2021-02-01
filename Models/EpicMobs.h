@@ -51,5 +51,44 @@ namespace Models{
 		void set_armor(int newArmor) {
 			armor = newArmor;
 		}
+
+		// Setter for lvl
+		void set_lvl(int newLvl) {
+			lvl = newLvl;
+		}
+        
+        void update_lvl(int modifier) {
+            lvl = modifier;
+            
+            if(lvl == 2) {
+                modifier_2();
+            } else if(lvl == 3) {
+                modifier_3();
+            } else if(lvl == 4) {
+                modifier_4();
+            }
+        }
+
+        void modifier_2() {
+            damage += 5;
+            health += 10;
+            armor += 3;
+        }
+
+        void modifier_3() {
+            modifier_2();
+            
+            damage += 7;
+            health += 12;
+            armor += 5;
+        }
+
+        void modifier_4() {
+            modifier_3();
+            
+            damage += 9;
+            health += 15;
+            armor += 7;
+        }
 	};
 }

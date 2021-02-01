@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include "DefaultMobs.cpp"
+#include "EpicMobs.cpp"
 
 namespace Models {
 	int murlocsAttack(Murloc, Hero);
@@ -14,19 +15,19 @@ namespace Models {
 	void hero_stats(Hero);
     	void pause(int dur);
 
-	void battle(Hero hero) {
+	void battle(Hero hero, int modifier) {
 		// Function for battle session
 		
-		int randomMob = (rand() % 2) + 1;
-        std::cout << randomMob;
+		int randomMob = (rand() % 3) + 1;
 
 		int round = 1;
         
-        int heroHealthBeforeFight = hero.get_health();
+        	int heroHealthBeforeFight = hero.get_health();
 
 		if(randomMob == 1) {
 			Murloc murloc;
 			murloc.build_stats_for_murlocs();
+            		murloc.update_lvl(modifier);
 
 			std::cout << "\tYour opponent will be " << murloc.get_name() << "\n\n";
             
@@ -35,7 +36,7 @@ namespace Models {
 			int heroHealth;
 			int murlocHealth;
 			do {
-                    system("clear");
+                    		system("clear");
                	
 				// Murloc's stats	
                 		std::cout << "Murloc's stats: \n";
@@ -66,7 +67,7 @@ namespace Models {
 				murlocHealth = heroAttackMurloc(hero, murloc);
 				if(murlocHealth <= 0) {
 					int moreExp = hero.get_exp();
-					moreExp += 100;
+					moreExp += 100 * modifier;
 					hero.set_exp(moreExp);
 
 					std::cout << "\nYou take +100exp\n\n";
@@ -89,133 +90,135 @@ namespace Models {
 				
 		} else if(randomMob == 2) {
 			Kobold kobold;
-            kobold.build_stats_for_kobolds();
+            		kobold.build_stats_for_kobolds();
+            		kobold.update_lvl(modifier);
 
-            std::cout << "\tYour opponent will be " << kobold.get_name() << "\n\n";
+            		std::cout << "\tYour opponent will be " << kobold.get_name() << "\n\n";
             
-                    pause(5);
+                    	pause(5);
 
-            int heroHealth;
-            int koboldHealth;
-            do {
-                        system("clear");
+            		int heroHealth;
+            		int koboldHealth;
+            		do {
+                        	system("clear");
                    
-                // Kobold's stats
-                        std::cout << "Kobold's stats: \n";
-                        std::cout << "\tDamage: " << kobold.get_damage() << "\n";
-                        std::cout << "\tHealth: " << kobold.get_health() << "\n";
-                        std::cout << "\tArmor: " << kobold.get_armor() << "\n";
-                        std::cout << "\tResists: " << kobold.get_resists() << "\n";
-                        std::cout << "\tLvl: " << kobold.get_lvl() << "\n\n";
+                		// Kobold's stats
+                        	std::cout << "Kobold's stats: \n";
+                        	std::cout << "\tDamage: " << kobold.get_damage() << "\n";
+                        	std::cout << "\tHealth: " << kobold.get_health() << "\n";
+                        	std::cout << "\tArmor: " << kobold.get_armor() << "\n";
+                        	std::cout << "\tResists: " << kobold.get_resists() << "\n";
+                        	std::cout << "\tLvl: " << kobold.get_lvl() << "\n\n";
 
-                // Hero's stats
-                        hero_stats(hero);
+                		// Hero's stats
+                        	hero_stats(hero);
 
-                // Count of rounds
-                std::cout << "\t\tRound " << round << "\n\n";
+                		// Count of rounds
+                		std::cout << "\t\tRound " << round << "\n\n";
 
-                pause(3);
+                		pause(3);
                         
-                // Kobold's attack
-                heroHealth = koboldsAttack(kobold, hero);
-                if(heroHealth <= 0) {
-                    break;
-                }
+                		// Kobold's attack
+                		heroHealth = koboldsAttack(kobold, hero);
+                		if(heroHealth <= 0) {
+                    			break;
+                		}
 
-                pause(3);
-                std::cout << "\n";
+                		pause(3);
+                		std::cout << "\n";
 
-                // Hero's attack
-                koboldHealth = heroAttackKobold(hero, kobold);
-                if(koboldHealth <= 0) {
-                    int moreExp = hero.get_exp();
-                    moreExp += 100;
-                    hero.set_exp(moreExp);
+                		// Hero's attack
+                		koboldHealth = heroAttackKobold(hero, kobold);
+                		if(koboldHealth <= 0) {
+                    			int moreExp = hero.get_exp();
+                    			moreExp += 100 * modifier;
+                    			hero.set_exp(moreExp);
 
-                    std::cout << "\nYou take +100exp\n\n";
+                    			std::cout << "\nYou take +100exp\n\n";
 
-                    break;
-                }
+                    			break;
+                		}
 
-                // Set the new values of health
-                hero.set_health(heroHealth);
-                kobold.set_health(koboldHealth);
+                		// Set the new values of health
+                		hero.set_health(heroHealth);
+                		kobold.set_health(koboldHealth);
 
-                pause(5);
-                round++;
+                		pause(5);
+                		round++;
+	
+        		        std::cout << "\n\n";
 
-                std::cout << "\n\n";
+            		} while(hero.get_health() > 0 && kobold.get_health() > 0);
 
-            } while(hero.get_health() > 0 && kobold.get_health() > 0);
-
-            std::cout << "End of Battle\n\n";
+            		std::cout << "End of Battle\n\n";
 
 
 		} else if(randomMob == 3) {
-            Minotaur minotaur;
-            minotaur.build_stats_for_minotaurs();
+            		Minotaur minotaur;
+            		minotaur.build_stats_for_minotaurs();
+            		minotaur.update_lvl(modifier);
 
-            std::cout << "\tYour opponent will be " << minotaur.get_name() << "\n\n";
+            		std::cout << "\tYour opponent will be " << minotaur.get_name() << "\n\n";
             
-                    pause(5);
+                    	pause(5);
 
-            int heroHealth;
-            int minotaurHealth;
-            do {
-                    system("clear");
+            		int heroHealth;
+            		int minotaurHealth;
+            		do {
+                    		system("clear");
                    
-                // Minotaur's stats
-                        std::cout << "Minotaur's stats: \n";
-                        std::cout << "\tDamage: " << minotaur.get_damage() << "\n";
-                        std::cout << "\tHealth: " << minotaur.get_health() << "\n";
-                        std::cout << "\tArmor: " << minotaur.get_armor() << "\n";
-                        std::cout << "\tResists: " << minotaur.get_resists() << "\n";
-                        std::cout << "\tLvl: " << minotaur.get_lvl() << "\n\n";
+                		// Minotaur's stats
+                        	std::cout << "Minotaur's stats: \n";
+                        	std::cout << "\tDamage: " << minotaur.get_damage() << "\n";
+                        	std::cout << "\tHealth: " << minotaur.get_health() << "\n";
+                        	std::cout << "\tArmor: " << minotaur.get_armor() << "\n";
+                        	std::cout << "\tResists: " << minotaur.get_resists() << "\n";
+                        	std::cout << "\tLvl: " << minotaur.get_lvl() << "\n\n";
 
-                // Hero's stats
-                        hero_stats(hero);
+                		// Hero's stats
+                        	hero_stats(hero);
 
-                // Count of rounds
-                std::cout << "\t\tRound " << round << "\n\n";
+                		// Count of rounds
+                		std::cout << "\t\tRound " << round << "\n\n";
 
-                pause(3);
+                		pause(3);
                         
-                // Murloc's attack
-                heroHealth = minotaurAttack(minotaur, hero);
-                if(heroHealth <= 0) {
-                    break;
-                }
+                		// Murloc's attack
+                		heroHealth = minotaursAttack(minotaur, hero);
+                		if(heroHealth <= 0) {
+                    			break;
+                		}
 
-                pause(3);
-                std::cout << "\n";
+                		pause(3);
+                		std::cout << "\n";
 
-                // Hero's attack
-                minotaurHealth = heroAttackMinotaur(hero, minotaur);
-                if(minotaurHealth <= 0) {
-                    int moreExp = hero.get_exp();
-                    moreExp += 100;
-                    hero.set_exp(moreExp);
+                		// Hero's attack
+                		minotaurHealth = heroAttackMinotaur(hero, minotaur);
+                		if(minotaurHealth <= 0) {
+                    			int moreExp = hero.get_exp();
+                    			moreExp += 100 * modifier;
+                    			hero.set_exp(moreExp);
 
-                    std::cout << "\nYou take +100exp\n\n";
+                    			std::cout << "\nYou take +100exp\n\n";
 
-                    break;
-                }
+                    			break;
+                		}
 
-                // Set the new values of health
-                hero.set_health(heroHealth);
-                minotaur.set_health(minotaurHealth);
+                		// Set the new values of health
+                		hero.set_health(heroHealth);
+                		minotaur.set_health(minotaurHealth);
 
-                pause(5);
-                round++;
+                		pause(5);
+                		round++;
+	
+        		        std::cout << "\n\n";
 
-                std::cout << "\n\n";
+            		} while(hero.get_health() > 0 && minotaur.get_health() > 0);
 
-            } while(hero.get_health() > 0 && minotaur.get_health() > 0);
-
-            std::cout << "End of Battle\n\n";
+            		std::cout << "End of Battle\n\n";
 		}
         
-        hero.set_health(heroHealthBeforeFight);
+        	hero.set_health(heroHealthBeforeFight);
 	}
 
 	int murlocsAttack(Murloc murloc, Hero hero) {
@@ -289,7 +292,7 @@ namespace Models {
         return hero.get_health();
     }
 
-    int minotaursAttack(Minotaur, Hero){
+    int minotaursAttack(Minotaur minotaur, Hero hero){
         // Minotaur attack function
 
         // If random value will be 5
