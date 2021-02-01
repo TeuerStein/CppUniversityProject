@@ -19,11 +19,12 @@ namespace Views {
 
 		hero.set_class_of_hero(Models::get_a_class_of_hero());
 
-		std::cout << "Name of class: " << hero.get_name_of_class() << "\n";
-		std::cout << "Damage: " << hero.get_damage() << "\n";
-		std::cout << "Health: " << hero.get_health() << "\n";
-		std::cout << "Armor: " << hero.get_armor() << "\n";
-		std::cout << "Type of damage: " << hero.get_type_of_damage() << "\n";
+		std::cout << "Your stats: \n";
+		std::cout << "\tName of class: " << hero.get_name_of_class() << "\n";
+		std::cout << "\tDamage: " << hero.get_damage() << "\n";
+		std::cout << "\tHealth: " << hero.get_health() << "\n";
+		std::cout << "\tArmor: " << hero.get_armor() << "\n";
+		std::cout << "\tType of damage: " << hero.get_type_of_damage() << "\n";
         
     	}
 }

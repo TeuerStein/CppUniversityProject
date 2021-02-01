@@ -15,20 +15,27 @@ namespace Models {
 		}
 	}
 
-	char get_a_class_of_hero() {
-		char classOfHero;
+	std::string get_a_class_of_hero() {
+		std::string classOfHero;
 
 		std::cout << "Please, choose class for your Hero: \n\n";
-		std::cout << "1 - Warrior\n";
-		std::cout << "2 - Mage\n";
-		std::cout << "3 - Archer\n";
+		std::cout << "\tWarrior\n";
+		std::cout << "\tMage\n";
+		std::cout << "\tArcher\n\n";
 		std::cin >> classOfHero;
+		std::cout << "\n\n";
 
-		if(classOfHero != 00) {
+		if(classOfHero == "Warrior" ||
+		   classOfHero == "warrior" ||
+		   classOfHero == "Mage" ||
+		   classOfHero == "mage" ||
+		   classOfHero == "Archer" ||
+		   classOfHero == "archer"
+		) {
 			return classOfHero;
 		} else {
 			std::cout << "You need to enter a class of Hero\n";
-			get_a_class_of_hero();
+			return get_a_class_of_hero();
 		}
 	}
 }

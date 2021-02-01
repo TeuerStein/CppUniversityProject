@@ -21,32 +21,31 @@ namespace Models {
 			return nameOfHero;
 		}
 
-		void set_class_of_hero(char classOfHeroFromInput) {
-			if(classOfHeroFromInput == '1') {
-				// 1 - Warrior
+		void set_class_of_hero(std::string classOfHeroFromInput) {
+			if(classOfHeroFromInput == "Warrior" ||
+					classOfHeroFromInput == "warrior") {
 				Warrior classOfHero;
 				classOfHero.build_an_warrior();
 				set_all_stats_for_hero(
-						classOfHero.get_name_of_class(),
-						classOfHero.get_base_damage(),
-						classOfHero.get_base_health(),
-						classOfHero.get_base_armor(),
-						classOfHero.get_type_of_damage()
+					classOfHero.get_name_of_class(),
+					classOfHero.get_base_damage(),
+					classOfHero.get_base_health(),
+					classOfHero.get_base_armor(),
+					classOfHero.get_type_of_damage()
 				);
 
-			} else if(classOfHeroFromInput == '2') {
-				// 2 - Mage
-				//Mage classOfHero;
-                Mage classOfHero;
-                set_all_stats_for_hero(
-                        classOfHero.get_name_of_class(),
-                        classOfHero.get_base_damage(),
-                        classOfHero.get_base_health(),
-                        classOfHero.get_base_armor(),
-                        classOfHero.get_type_of_damage()
-                );
-			} else if(classOfHeroFromInput == '3') {
-				// 3 - Archer
+			} else if(classOfHeroFromInput == "Mage" ||
+					classOfHeroFromInput == "mage") {
+				Mage classOfHero;
+                		set_all_stats_for_hero(
+                        		classOfHero.get_name_of_class(),
+                        		classOfHero.get_base_damage(),
+                        		classOfHero.get_base_health(),
+                        		classOfHero.get_base_armor(),
+                        		classOfHero.get_type_of_damage()
+                		);
+			} else if(classOfHeroFromInput == "Archer" ||
+					classOfHeroFromInput == "archer") {
 				//Archer classOfHero;
 				std::cout << "Archer\n";
 
