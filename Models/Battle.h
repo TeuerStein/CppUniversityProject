@@ -13,7 +13,7 @@ namespace Models {
 	int heroAttackMinotaur(Hero, Minotaur);
 
 	void hero_stats(Hero);
-    	void pause(int dur);
+    void pause(int dur);
 
 	void battle(Hero hero, int modifier) {
 		// Function for battle session
@@ -70,7 +70,7 @@ namespace Models {
 					moreExp += 100 * modifier;
 					hero.set_exp(moreExp);
 
-					std::cout << "\nYou take +100exp\n\n";
+                    std::cout << "\nYou take +" << moreExp << "exp\n\n";
 
 					break;
 				}
@@ -134,7 +134,7 @@ namespace Models {
                     			moreExp += 100 * modifier;
                     			hero.set_exp(moreExp);
 
-                    			std::cout << "\nYou take +100exp\n\n";
+                                std::cout << "\nYou take +" << moreExp << "exp\n\n";
 
                     			break;
                 		}
@@ -199,7 +199,7 @@ namespace Models {
                     			moreExp += 100 * modifier;
                     			hero.set_exp(moreExp);
 
-                    			std::cout << "\nYou take +100exp\n\n";
+                                std::cout << "\nYou take +" << moreExp << "exp\n\n";
 
                     			break;
                 		}

@@ -11,9 +11,10 @@ namespace Models{
         int damage;
         int health;
         int armor;
+        std::string resists = "None";
 
     public:
-        void build_stats_for_minotaurs() {
+        void build_stats_for_boss() {
             // Function for build main stats for enemy
 
             damage = (rand() % 15) + 45;
@@ -40,10 +41,6 @@ namespace Models{
 
         std::string get_resists() {
             return resists;
-        }
-
-        int get_lvl() {
-            return lvl;
         }
 
         // Setter for health & armor

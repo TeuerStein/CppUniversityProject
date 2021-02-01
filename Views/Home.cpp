@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../Models/Hero.cpp"
-#include "../Models/Battle.cpp""
+#include "../Models/Battle.cpp"
+#include "../Models/BossBattle.cpp"
 
 namespace Views {
 	void home () {
@@ -47,6 +48,7 @@ namespace Views {
                 Models::battle(hero, 4);
                 break;
             case 5:
+                Models::battle(hero);
                 break;
         }
         
