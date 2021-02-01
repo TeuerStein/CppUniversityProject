@@ -63,10 +63,44 @@ namespace Models{
 		int lvl = 1;
 
 	public:
-		void build_stats_for_kobold() {
-			damage = (rand() % 6) + 1;
-			health = (rand() % 5) + 3;
+		void build_stats_for_kobolds() {
+			damage = (rand() % 6) + 10;
+			health = (rand() % 5) + 20;
 			armor = (rand() % 3) + 3;
 		}
+        
+        // Getters for all of stats
+        std::string get_name(){
+            return name;
+        }
+
+        int get_damage() {
+            return damage;
+        }
+
+        int get_health() {
+            return health;
+        }
+
+        int get_armor() {
+            return armor;
+        }
+
+        std::string get_resists() {
+            return resists;
+        }
+
+        int get_lvl() {
+            return lvl;
+        }
+
+        // Setter for health & armor
+        void set_health(int newHealth) {
+            health = newHealth;
+        }
+
+        void set_armor(int newArmor) {
+            armor = newArmor;
+        }
 	};	
 }
