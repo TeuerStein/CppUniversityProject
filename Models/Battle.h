@@ -39,7 +39,7 @@ namespace Models {
 
             std::cout << "\tYour opponent will be " << murloc.get_name() << "\n\n";
 
-            pause(5);
+            pause(3);
 
             int murlocHealth;
             do {
@@ -59,26 +59,25 @@ namespace Models {
                 // Count of rounds
                 std::cout << "\t\tRound " << round << "\n\n";
 
-                pause(3);
+                pause(2);
 
                 // Murloc's attack
                 murlocsAttack(&murloc, hero);
 
-                pause(3);
+                pause(2);
                 std::cout << "\n";
 
                 // Hero's attack
                 heroAttackMurloc(hero, &murloc);
-                if (murlocHealth <= 0) {
-                    hero->set_exp(hero->get_exp() + 100 * modifier);
+                if (murloc.get_health() <= 0) {
+                    std::cout << hero->get_exp() << "\n";
+                    hero->set_exp(hero->get_exp() + (100 * modifier));
+                    std::cout << hero->get_exp() << "\n";
 
                     std::cout << "\nYou take +" << 100 * modifier << "exp\n\n";
 
                     break;
                 }
-
-                // Set the new values of health
-                murloc.set_health(murlocHealth);
 
                 pause(5);
                 round++;

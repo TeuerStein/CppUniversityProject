@@ -9,12 +9,12 @@ namespace Models {
 
 		std::string nameOfHero;
 		std::string nameOfClass;
-		int damage;
-		int health;
-		int armor;
+		int8_t damage;
+		int8_t health;
+		int8_t armor;
 		std::string typeOfDamage;
-		int lvl = 1;
-		int exp = 0;
+		int8_t lvl = 1;
+		int16_t exp = 0;
 
 	public:
 		void set_name_of_hero(std::string nameFromInput) {
