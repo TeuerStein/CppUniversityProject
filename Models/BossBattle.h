@@ -7,6 +7,8 @@ namespace Models {
 
     int heroAttackBoss(Hero, DungeonMaster);
 
+    void hero_stats(Hero *);
+
     int battle(Hero hero) {
         // Function for battle session
         
@@ -36,7 +38,7 @@ namespace Models {
             std::cout << "\tResists: " << dungeonMaster.get_resists() << "\n";
 
             // Hero's stats
-            hero_stats(hero);
+//            hero_stats(hero);
 
             // Count of rounds
             std::cout << "\t\tRound " << round << "\n\n";
@@ -153,5 +155,6 @@ namespace Models {
 
         return dungeonMaster.get_health();
     }
+
 }
 

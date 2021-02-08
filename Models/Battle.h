@@ -9,24 +9,24 @@
 namespace Models {
     void murlocsAttack(Murloc *, Hero *);
 
-    int koboldsAttack(Kobold, Hero);
+    void koboldsAttack(Kobold *, Hero *);
 
-    int minotaursAttack(Minotaur, Hero);
+    void minotaursAttack(Minotaur *, Hero *);
 
     void heroAttackMurloc(Hero *, Murloc *);
 
-    int heroAttackKobold(Hero, Kobold);
+    void heroAttackKobold(Hero *, Kobold *);
 
-    int heroAttackMinotaur(Hero, Minotaur);
+    void heroAttackMinotaur(Hero *, Minotaur *);
 
-    void hero_stats(Hero);
+    void hero_stats(Hero *);
 
     void pause(int dur);
 
     int battle(Hero *hero, int modifier) {
         // Function for battle session
 
-        int randomMob = 1;//(rand() % 3) + 1;
+        const int randomMob = (rand() % 3) + 1;
 
         int round = 1;
 
@@ -39,9 +39,8 @@ namespace Models {
 
             std::cout << "\tYour opponent will be " << murloc.get_name() << "\n\n";
 
-            pause(3);
+            pause(2);
 
-            int murlocHealth;
             do {
                 system("clear");
 
@@ -54,7 +53,7 @@ namespace Models {
                 std::cout << "\tLvl: " << murloc.get_lvl() << "\n\n";
 
                 // Hero's stats
-                hero_stats(*hero);
+                hero_stats(hero);
 
                 // Count of rounds
                 std::cout << "\t\tRound " << round << "\n\n";
@@ -73,11 +72,9 @@ namespace Models {
                     hero->set_exp(hero->get_exp() + (100 * modifier));
 
                     std::cout << "\nYou take +" << 100 * modifier << "exp\n\n";
-
-                    break;
                 }
 
-                pause(5);
+                pause(3);
                 round++;
 
                 std::cout << "\n\n";
@@ -93,10 +90,8 @@ namespace Models {
 
             std::cout << "\tYour opponent will be " << kobold.get_name() << "\n\n";
 
-            pause(5);
+            pause(2);
 
-            int heroHealth;
-            int koboldHealth;
             do {
                 system("clear");
 
@@ -109,39 +104,28 @@ namespace Models {
                 std::cout << "\tLvl: " << kobold.get_lvl() << "\n\n";
 
                 // Hero's stats
-                hero_stats(*hero);
+                hero_stats(hero);
 
                 // Count of rounds
                 std::cout << "\t\tRound " << round << "\n\n";
 
-                pause(3);
+                pause(2);
 
                 // Kobold's attack
-                heroHealth = koboldsAttack(kobold, *hero);
-                if (heroHealth <= 0) {
-                    break;
-                }
+                koboldsAttack(&kobold, hero);
 
-                pause(3);
+                pause(2);
                 std::cout << "\n";
 
                 // Hero's attack
-                koboldHealth = heroAttackKobold(*hero, kobold);
-                if (koboldHealth <= 0) {
-                    int moreExp = hero->get_exp();
-                    moreExp += 100 * modifier;
-                    hero->set_exp(moreExp);
+                heroAttackKobold(hero, &kobold);
+                if (kobold.get_health() <= 0) {
+                    hero->set_exp(hero->get_exp() + (100 * modifier));
 
                     std::cout << "\nYou take +" << 100 * modifier << "exp\n\n";
-
-                    break;
                 }
 
-                // Set the new values of health
-                hero->set_health(heroHealth);
-                kobold.set_health(koboldHealth);
-
-                pause(5);
+                pause(3);
                 round++;
 
                 std::cout << "\n\n";
@@ -158,10 +142,8 @@ namespace Models {
 
             std::cout << "\tYour opponent will be " << minotaur.get_name() << "\n\n";
 
-            pause(5);
+            pause(2);
 
-            int heroHealth;
-            int minotaurHealth;
             do {
                 system("clear");
 
@@ -174,39 +156,28 @@ namespace Models {
                 std::cout << "\tLvl: " << minotaur.get_lvl() << "\n\n";
 
                 // Hero's stats
-                hero_stats(*hero);
+                hero_stats(hero);
 
                 // Count of rounds
                 std::cout << "\t\tRound " << round << "\n\n";
 
-                pause(3);
+                pause(2);
 
                 // Murloc's attack
-                heroHealth = minotaursAttack(minotaur, *hero);
-                if (heroHealth <= 0) {
-                    break;
-                }
+                minotaursAttack(&minotaur, hero);
 
-                pause(3);
+                pause(2);
                 std::cout << "\n";
 
                 // Hero's attack
-                minotaurHealth = heroAttackMinotaur(*hero, minotaur);
-                if (minotaurHealth <= 0) {
-                    int moreExp = hero->get_exp();
-                    moreExp += 100 * modifier;
-                    hero->set_exp(moreExp);
+                heroAttackMinotaur(hero, &minotaur);
+                if (minotaur.get_health() <= 0) {
+                    hero->set_exp(hero->get_exp() + (100 * modifier));
 
                     std::cout << "\nYou take +" << 100 * modifier << "exp\n\n";
-
-                    break;
                 }
 
-                // Set the new values of health
-                hero->set_health(heroHealth);
-                minotaur.set_health(minotaurHealth);
-
-                pause(5);
+                pause(3);
                 round++;
 
                 std::cout << "\n\n";
@@ -253,7 +224,7 @@ namespace Models {
         }
     }
 
-    int koboldsAttack(Kobold kobold, Hero hero) {
+    void koboldsAttack(Kobold *kobold, Hero *hero) {
         // Kobold attack function
 
         // If random value will be 5
@@ -261,35 +232,34 @@ namespace Models {
         int miss = (rand() % 7) + 5;
         if (miss == 5) {
             std::cout << "* Kobold missed *\n\n";
-            return hero.get_health();
+            return;
         }
 
-        std::cout << "* Damage from " << kobold.get_name() << " *\n";
+        std::cout << "* Damage from " << kobold->get_name() << " *\n";
 
         // Damage to Hero's armor
-        int heroArmor = hero.get_armor() - kobold.get_damage();
+        int heroArmor = hero->get_armor() - kobold->get_damage();
 
         std::cout << "Hero's armor: " << heroArmor << "\n";
 
         // If points of armor more than 0
         // Hero's health will not change
         if (heroArmor < 0) {
-            int heroHealth = hero.get_health() + heroArmor;
+            std::cout << "Taken damage: " << heroArmor * (-1) << "\n";
 
-            std::cout << "Hero's health: " << heroHealth << "\n";
+            hero->set_health(hero->get_health() + heroArmor);
 
-            if (heroHealth <= 0) {
+            if (hero->get_health() <= 0) {
                 std::cout << "* You are dead *\n";
                 exit(0);
             }
 
-            return heroHealth;
+        } else {
+            std::cout << "Remnants of armor: " << heroArmor << "\n";
         }
-
-        return hero.get_health();
     }
 
-    int minotaursAttack(Minotaur minotaur, Hero hero) {
+    void minotaursAttack(Minotaur *minotaur, Hero *hero) {
         // Minotaur attack function
 
         // If random value will be 5
@@ -297,32 +267,29 @@ namespace Models {
         int miss = (rand() % 5) + 5;
         if (miss == 6) {
             std::cout << "* Minotaur missed *\n\n";
-            return hero.get_health();
+            return;
         }
 
-        std::cout << "* Damage from " << minotaur.get_name() << " *\n";
+        std::cout << "* Damage from " << minotaur->get_name() << " *\n";
 
         // Damage to Hero's armor
-        int heroArmor = hero.get_armor() - minotaur.get_damage();
-
-        std::cout << "Hero's armor: " << heroArmor << "\n";
+        int heroArmor = hero->get_armor() - minotaur->get_damage();
 
         // If points of armor more than 0
         // Hero's health will not change
         if (heroArmor < 0) {
-            int heroHealth = hero.get_health() + heroArmor;
+            std::cout << "Taken damage: " << heroArmor * (-1) << "\n";
 
-            std::cout << "Hero's health: " << heroHealth << "\n";
+            hero->set_health(hero->get_health() + heroArmor);
 
-            if (heroHealth <= 0) {
+            if (hero->get_health() <= 0) {
                 std::cout << "* You are dead *\n";
                 exit(0);
             }
 
-            return heroHealth;
+        } else {
+            std::cout << "Remnants of armor: " << heroArmor << "\n";
         }
-
-        return hero.get_health();
 
     }
 
@@ -353,7 +320,7 @@ namespace Models {
 
         // If points of armor more than 0
         // enemy's health will not change
-        if (murlocArmor <= 0) {
+        if (murlocArmor < 0) {
             std::cout << "Given damage: " << murlocArmor * (-1) << "\n";
 
             murloc->set_health(murloc->get_health() + murlocArmor);
@@ -369,7 +336,7 @@ namespace Models {
         }
     }
 
-    int heroAttackKobold(Hero hero, Kobold kobold) {
+    void heroAttackKobold(Hero *hero, Kobold *kobold) {
         // Hero attacks function
 
         // If random value will be 1
@@ -377,43 +344,42 @@ namespace Models {
         int miss = (rand() % 5) + 1;
         if (miss == 1) {
             std::cout << "* Hero missed *\n\n";
-            return kobold.get_health();
+            return;
         }
 
-        std::cout << "* Make the damage for " << kobold.get_name() << " *\n";
+        std::cout << "* Make the damage for " << kobold->get_name() << " *\n";
 
         // If hero's type of damage == enemy's type of resist
         // damage from hero will be 1/2
         int heroDamage;
-        if (hero.get_type_of_damage() == kobold.get_resists()) {
-            heroDamage = hero.get_damage() / 2;
+        if (hero->get_type_of_damage() == kobold->get_resists()) {
+            heroDamage = hero->get_damage() / 2;
         } else {
-            heroDamage = hero.get_damage();
+            heroDamage = hero->get_damage();
         }
 
         // Damage to enemy's armor
-        int koboldArmor = kobold.get_armor() - heroDamage;
-
-        std::cout << "Kobold's armor: " << koboldArmor << "\n";
+        int koboldArmor = kobold->get_armor() - heroDamage;
 
         // If points of armor more than 0
         // enemy's health will not change
         if (koboldArmor < 0) {
-            int koboldHealth = kobold.get_health() + koboldArmor;
+            std::cout << "Given damage: " << koboldArmor * (-1) << "\n";
 
-            std::cout << "Kobold's health: " << koboldHealth << "\n";
+            kobold->set_health(kobold->get_health() + koboldArmor);
 
-            if (koboldHealth <= 0) {
+            std::cout << "Kobold's health: " << kobold->get_health() << "\n";
+
+            if (kobold->get_health() <= 0) {
                 std::cout << "* Kobold is dead *\n";
             }
 
-            return koboldHealth;
+        } else {
+            std::cout << "Remnants of armor: " << koboldArmor << "\n";
         }
-
-        return kobold.get_health();
     }
 
-    int heroAttackMinotaur(Hero hero, Minotaur minotaur) {
+    void heroAttackMinotaur(Hero *hero, Minotaur *minotaur) {
         // Hero attacks function
 
         // If random value will be 1
@@ -421,51 +387,50 @@ namespace Models {
         int miss = (rand() % 5) + 1;
         if (miss == 1) {
             std::cout << "* Hero missed *\n\n";
-            return minotaur.get_health();
+            return;
         }
 
-        std::cout << "* Make the damage for " << minotaur.get_name() << " *\n";
+        std::cout << "* Make the damage for " << minotaur->get_name() << " *\n";
 
         // If hero's type of damage == enemy's type of resist
         // damage from hero will be 1/2
         int heroDamage;
-        if (hero.get_type_of_damage() == minotaur.get_resists()) {
-            heroDamage = hero.get_damage() / 2;
+        if (hero->get_type_of_damage() == minotaur->get_resists()) {
+            heroDamage = hero->get_damage() / 2;
         } else {
-            heroDamage = hero.get_damage();
+            heroDamage = hero->get_damage();
         }
 
         // Damage to enemy's armor
-        int minotaurArmor = minotaur.get_armor() - heroDamage;
-
-        std::cout << "Minotaur's armor: " << minotaurArmor << "\n";
+        int minotaurArmor = minotaur->get_armor() - heroDamage;
 
         // If points of armor more than 0
         // enemy's health will not change
         if (minotaurArmor < 0) {
-            int minotaurHealth = minotaur.get_health() + minotaurArmor;
+            std::cout << "Given damage: " << minotaurArmor * (-1) << "\n";
 
-            std::cout << "Minotaur's health: " << minotaurHealth << "\n";
+            minotaur->set_health(minotaur->get_health() + minotaurArmor);
 
-            if (minotaurHealth <= 0) {
-                std::cout << "* Minotaur is dead *\n";
+            std::cout << minotaur->get_name() << "'s health: " << minotaur->get_health() << "\n";
+
+            if (minotaur->get_health() <= 0) {
+                std::cout << "* " << minotaur->get_name() << " is dead *\n";
             }
 
-            return minotaurHealth;
+        } else {
+            std::cout << "Remnants of armor: " << minotaurArmor << "\n";
         }
-
-        return minotaur.get_health();
     }
 
-    void hero_stats(Hero hero) {
+    void hero_stats(Hero *hero) {
         std::cout << "Your stats: \n";
-        std::cout << "\tClass: " << hero.get_name_of_class() << "\n";
-        std::cout << "\tDamage: " << hero.get_damage() << "\n";
-        std::cout << "\tHealth: " << hero.get_health() << "\n";
-        std::cout << "\tArmor: " << hero.get_armor() << "\n";
-        std::cout << "\tType of damage: " << hero.get_type_of_damage() << "\n";
-        std::cout << "\tLvl: " << hero.get_lvl() << "\n";
-        std::cout << "\tCurrent exp: " << hero.get_exp() << "\n\n\n";
+        std::cout << "\tClass: " << hero->get_name_of_class() << "\n";
+        std::cout << "\tDamage: " << hero->get_damage() << "\n";
+        std::cout << "\tHealth: " << hero->get_health() << "\n";
+        std::cout << "\tArmor: " << hero->get_armor() << "\n";
+        std::cout << "\tType of damage: " << hero->get_type_of_damage() << "\n";
+        std::cout << "\tLvl: " << hero->get_lvl() << "\n";
+        std::cout << "\tCurrent exp: " << hero->get_exp() << "\n\n\n";
     }
 
     void pause(int dur) {
