@@ -70,9 +70,7 @@ namespace Models {
                 // Hero's attack
                 heroAttackMurloc(hero, &murloc);
                 if (murloc.get_health() <= 0) {
-                    std::cout << hero->get_exp() << "\n";
                     hero->set_exp(hero->get_exp() + (100 * modifier));
-                    std::cout << hero->get_exp() << "\n";
 
                     std::cout << "\nYou take +" << 100 * modifier << "exp\n\n";
 

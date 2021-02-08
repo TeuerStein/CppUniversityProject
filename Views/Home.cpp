@@ -43,28 +43,21 @@ namespace Views {
         int modifierChooser;
         std::cin >> modifierChooser;
 
-        int heroExp;
-
         switch (modifierChooser) {
             case 1:
                 Models::battle(hero, 1);
-                hero->set_exp(heroExp);
                 break;
             case 2:
-                heroExp = Models::battle(hero, 2);
-                hero->set_exp(heroExp);
+                Models::battle(hero, 2);
                 break;
             case 3:
-                heroExp = Models::battle(hero, 3);
-                hero->set_exp(heroExp);
+                Models::battle(hero, 3);
                 break;
             case 4:
-                heroExp = Models::battle(hero, 4);
-                hero->set_exp(heroExp);
+                Models::battle(hero, 4);
                 break;
             case 5:
-                heroExp = Models::battle(*hero);
-                hero->set_exp(heroExp);
+                Models::battle(*hero);
                 break;
         }
 
