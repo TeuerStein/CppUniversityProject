@@ -7,17 +7,17 @@
 #define CPPUNIVERSITYPROJECT_BATTLE_H
 
 namespace Models {
-    void murlocsAttack(Murloc *, Hero *);
+    void murlocs_attack(Murloc *, Hero *);
 
-    void koboldsAttack(Kobold *, Hero *);
+    void kobolds_attack(Kobold *, Hero *);
 
-    void minotaursAttack(Minotaur *, Hero *);
+    void minotaurs_attack(Minotaur *, Hero *);
 
-    void heroAttackMurloc(Hero *, Murloc *);
+    void hero_attack_murloc(Hero *, Murloc *);
 
-    void heroAttackKobold(Hero *, Kobold *);
+    void hero_attack_kobold(Hero *, Kobold *);
 
-    void heroAttackMinotaur(Hero *, Minotaur *);
+    void hero_attack_minotaur(Hero *, Minotaur *);
 
     void hero_stats(Hero *);
 
@@ -61,13 +61,13 @@ namespace Models {
                 pause(2);
 
                 // Murloc's attack
-                murlocsAttack(&murloc, hero);
+                murlocs_attack(&murloc, hero);
 
                 pause(2);
                 std::cout << "\n";
 
                 // Hero's attack
-                heroAttackMurloc(hero, &murloc);
+                hero_attack_murloc(hero, &murloc);
                 if (murloc.get_health() <= 0) {
                     hero->set_exp(hero->get_exp() + (100 * modifier));
 
@@ -112,13 +112,13 @@ namespace Models {
                 pause(2);
 
                 // Kobold's attack
-                koboldsAttack(&kobold, hero);
+                kobolds_attack(&kobold, hero);
 
                 pause(2);
                 std::cout << "\n";
 
                 // Hero's attack
-                heroAttackKobold(hero, &kobold);
+                hero_attack_kobold(hero, &kobold);
                 if (kobold.get_health() <= 0) {
                     hero->set_exp(hero->get_exp() + (100 * modifier));
 
@@ -164,13 +164,13 @@ namespace Models {
                 pause(2);
 
                 // Murloc's attack
-                minotaursAttack(&minotaur, hero);
+                minotaurs_attack(&minotaur, hero);
 
                 pause(2);
                 std::cout << "\n";
 
                 // Hero's attack
-                heroAttackMinotaur(hero, &minotaur);
+                hero_attack_minotaur(hero, &minotaur);
                 if (minotaur.get_health() <= 0) {
                     hero->set_exp(hero->get_exp() + (100 * modifier));
 
@@ -192,7 +192,7 @@ namespace Models {
         return hero->get_exp();
     }
 
-    void murlocsAttack(Murloc *murloc, Hero *hero) {
+    void murlocs_attack(Murloc *murloc, Hero *hero) {
         // Murloc attack function
 
         // If random value will be 5
@@ -224,7 +224,7 @@ namespace Models {
         }
     }
 
-    void koboldsAttack(Kobold *kobold, Hero *hero) {
+    void kobolds_attack(Kobold *kobold, Hero *hero) {
         // Kobold attack function
 
         // If random value will be 5
@@ -257,7 +257,7 @@ namespace Models {
         }
     }
 
-    void minotaursAttack(Minotaur *minotaur, Hero *hero) {
+    void minotaurs_attack(Minotaur *minotaur, Hero *hero) {
         // Minotaur attack function
 
         // If random value will be 5
@@ -291,7 +291,7 @@ namespace Models {
 
     }
 
-    void heroAttackMurloc(Hero *hero, Murloc *murloc) {
+    void hero_attack_murloc(Hero *hero, Murloc *murloc) {
         // Hero attacks function
 
         // If random value will be 1
@@ -334,7 +334,7 @@ namespace Models {
         }
     }
 
-    void heroAttackKobold(Hero *hero, Kobold *kobold) {
+    void hero_attack_kobold(Hero *hero, Kobold *kobold) {
         // Hero attacks function
 
         // If random value will be 1
@@ -377,7 +377,7 @@ namespace Models {
         }
     }
 
-    void heroAttackMinotaur(Hero *hero, Minotaur *minotaur) {
+    void hero_attack_minotaur(Hero *hero, Minotaur *minotaur) {
         // Hero attacks function
 
         // If random value will be 1
