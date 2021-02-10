@@ -1,6 +1,5 @@
-//
-// Created by OLEKSANDR SOKOLOV on 12/26/20.
-//
+#include <iostream>
+#include <stdlib.h>
 
 #ifndef CPPUNIVERSITYPROJECT_DUNGEONBOSS_H
 #define CPPUNIVERSITYPROJECT_DUNGEONBOSS_H

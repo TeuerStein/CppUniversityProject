@@ -2,159 +2,150 @@
 #include <stdlib.h>
 #include "DungeonBoss.cpp"
 
+#ifndef CPPUNIVERSITYPROJECT_BOSSBATTLE_H
+#define CPPUNIVERSITYPROJECT_BOSSBATTLE_H
+
 namespace Models {
-	int bossAttack(DungeonMaster, Hero);
+	void bossAttack(DungeonMaster*, Hero*);
 
-    int heroAttackBoss(Hero, DungeonMaster);
+    void heroAttackBoss(Hero*, DungeonMaster*);
 
-    void hero_stats(Hero *);
-
-    int battle(Hero hero) {
-        // Function for battle session
-        
-        int randomMob = (rand() % 3) + 1;
+    void boss_battle(Hero* hero) {
+        // Function for battle session with Boss
 
         int round = 1;
         
-        int heroHealthBeforeFight = hero.get_health();
+        int heroHealthBeforeFight = hero->get_health();
 
         DungeonMaster dungeonMaster;
         dungeonMaster.build_stats_for_boss();
 
         std::cout << "\tYour opponent will be " << dungeonMaster.get_name() << "\n\n";
             
-        pause(5);
+        pause(2);
 
-        int heroHealth;
-        int bossHealth;
         do {
             system("clear");
                    
-            // Murloc's stats
-            std::cout << "Dungeon Master's stats: \n";
+            // Boss's stats
+            std::cout << dungeonMaster.get_name() << "'s stats: \n";
             std::cout << "\tDamage: " << dungeonMaster.get_damage() << "\n";
             std::cout << "\tHealth: " << dungeonMaster.get_health() << "\n";
             std::cout << "\tArmor: " << dungeonMaster.get_armor() << "\n";
             std::cout << "\tResists: " << dungeonMaster.get_resists() << "\n";
 
             // Hero's stats
-//            hero_stats(hero);
+            hero_stats(hero);
 
             // Count of rounds
             std::cout << "\t\tRound " << round << "\n\n";
 
-            pause(3);
+            pause(2);
                         
-            // Murloc's attack
-            heroHealth = bossAttack(dungeonMaster, hero);
-            if(heroHealth <= 0) {
-                break;
-            }
+            // Boss's attack
+            bossAttack(&dungeonMaster, hero);
 
-            pause(3);
+            pause(2);
             std::cout << "\n";
 
             // Hero's attack
-            bossHealth = heroAttackBoss(hero, dungeonMaster);
-            if(bossHealth <= 0) {
-                int moreExp = hero.get_exp();
-                moreExp += 10000;
-                hero.set_exp(moreExp);
+            heroAttackBoss(hero, &dungeonMaster);
+            if(dungeonMaster.get_health() <= 0) {
+                // If Boss dies Hero will take exp
+
+                hero->set_exp(hero->get_exp() + 10000);
 
                 std::cout << "\nYou take +" << 10000 << "exp\n\n";
-
-                break;
             }
 
-            // Set the new values of health
-            hero.set_health(heroHealth);
-            dungeonMaster.set_health(bossHealth);
-
-            pause(5);
+            pause(3);
             round++;
 
             std::cout << "\n\n";
 
-        } while(hero.get_health() > 0 && dungeonMaster.get_health() > 0);
+        // If someone died battle will ended
+        } while(hero->get_health() > 0 && dungeonMaster.get_health() > 0);
 
         std::cout << "End of Battle\n\n";
-        
-        hero.set_health(heroHealthBeforeFight);
 
-	return hero.get_exp();
+        // Reset a Hero's health for next fights
+        hero->set_health(heroHealthBeforeFight);
     }
 
-    int bossAttack(DungeonMaster dungeonMaster, Hero hero) {
+    void bossAttack(DungeonMaster* dungeonMaster, Hero* hero) {
         // Dungeon Master attack function
 
-        std::cout << "* Damage from " << dungeonMaster.get_name() << " *\n";
+        std::cout << "* Damage from " << dungeonMaster->get_name() << " *\n";
         
         // Damage to Hero's armor
-        int heroArmor = hero.get_armor() - dungeonMaster.get_damage();
+        int heroArmor = hero->get_armor() - dungeonMaster->get_damage();
 
-        std::cout << "Hero's armor: " << heroArmor << "\n";
+        if(heroArmor >= 0) {
+            std::cout << hero->get_name_of_hero() << "'s armor: " << heroArmor << "\n";
+        }
 
         // If points of armor more than 0
         // Hero's health will not change
         if(heroArmor < 0) {
-            int heroHealth = hero.get_health() + heroArmor;
+            std::cout << "Taken damage: " << heroArmor * (-1) << "\n";
 
-            std::cout << "Hero's health: " << heroHealth << "\n";
+            hero->set_health(hero->get_health() + heroArmor);
 
-            if(heroHealth <= 0) {
+            if(hero->get_health() <= 0) {
                 std::cout << "* You are dead *\n";
-		exit(0);
+		        exit(0);
             }
-
-            return heroHealth;
+        } else {
+            std::cout << "Remnants of armor: " << heroArmor << "\n";
         }
-
-        return hero.get_health();
     }
 
-    int heroAttackBoss(Hero hero, DungeonMaster dungeonMaster){
+    void heroAttackBoss(Hero* hero, DungeonMaster* dungeonMaster){
         // Hero attacks function
 
         // If random value will be 1
         // Hero shall miss next attack
         int miss = (rand() % 5) + 1;
         if(miss == 1) {
-            std::cout << "* Hero missed *\n\n";
-            return dungeonMaster.get_health();
+            std::cout << "* " << hero->get_name_of_hero() << " missed *\n\n";
+            return;
         }
 
-        std::cout << "* Make the damage for " << dungeonMaster.get_name() << " *\n";
+        std::cout << "* Make the damage for " << dungeonMaster->get_name() << " *\n";
         
         // If hero's type of damage == enemy's type of resist
         // damage from hero will be 1/2
         int heroDamage;
-        if(hero.get_type_of_damage() == dungeonMaster.get_resists()) {
-            heroDamage = hero.get_damage() / 2;
+        if(hero->get_type_of_damage() == dungeonMaster->get_resists()) {
+            heroDamage = hero->get_damage() / 2;
         } else {
-            heroDamage = hero.get_damage();
+            heroDamage = hero->get_damage();
         }
 
         // Damage to enemy's armor
-        int bossArmor = dungeonMaster.get_armor() - heroDamage;
+        int bossArmor = dungeonMaster->get_armor() - heroDamage;
 
-        std::cout << "Dungeon Master's armor: " << bossArmor << "\n";
+        if(bossArmor >= 0) {
+            std::cout << dungeonMaster->get_name() << "'s armor: " << bossArmor << "\n";
+        }
 
         // If points of armor more than 0
         // enemy's health will not change
         if(bossArmor < 0) {
-            int bossHealth = dungeonMaster.get_health() + bossArmor;
+            std::cout << "Given damage: " << bossArmor * (-1);
 
-            std::cout << "Dungeon Master's health: " << bossHealth << "\n";
+            dungeonMaster->set_health(dungeonMaster->get_health() + bossArmor);
 
-            if(bossHealth <= 0) {
-                std::cout << "* Dungeon Master is dead *\n";
+            std::cout << dungeonMaster->get_name() << "'s health: " << dungeonMaster->get_health() << "\n";
+
+            if(dungeonMaster->get_health() <= 0) {
+                std::cout << "* " << dungeonMaster->get_name() << "is dead *\n";
+            } else {
+                std::cout << "Remnants of armor: " << bossArmor << "\n";
             }
-
-            return bossHealth;
         }
-
-        return dungeonMaster.get_health();
     }
 
 }
 
+#endif

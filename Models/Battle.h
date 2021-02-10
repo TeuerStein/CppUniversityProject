@@ -199,7 +199,7 @@ namespace Models {
         // Murloc shall miss next attack
         int miss = (rand() % 5) + 5;
         if (miss == 6) {
-            std::cout << "* Murloc missed *\n\n";
+            std::cout << "* " << murloc->get_name() << " missed *\n\n";
             return;
         }
 
@@ -231,7 +231,7 @@ namespace Models {
         // Kobold shall miss next attack
         int miss = (rand() % 7) + 5;
         if (miss == 5) {
-            std::cout << "* Kobold missed *\n\n";
+            std::cout << "* " << kobold->get_name() << " missed *\n\n";
             return;
         }
 
@@ -239,8 +239,6 @@ namespace Models {
 
         // Damage to Hero's armor
         int heroArmor = hero->get_armor() - kobold->get_damage();
-
-        std::cout << "Hero's armor: " << heroArmor << "\n";
 
         // If points of armor more than 0
         // Hero's health will not change
@@ -266,7 +264,7 @@ namespace Models {
         // Minotaur shall miss next attack
         int miss = (rand() % 5) + 5;
         if (miss == 6) {
-            std::cout << "* Minotaur missed *\n\n";
+            std::cout << "* " << minotaur->get_name() << " missed *\n\n";
             return;
         }
 
@@ -300,7 +298,7 @@ namespace Models {
         // Hero shall miss next attack
         int miss = (rand() % 5) + 1;
         if (miss == 1) {
-            std::cout << "* Hero missed *\n\n";
+            std::cout << "* " << hero->get_name_of_hero() << " missed *\n\n";
             return;
         }
 
@@ -325,10 +323,10 @@ namespace Models {
 
             murloc->set_health(murloc->get_health() + murlocArmor);
 
-            std::cout << "Murloc's health: " << murloc->get_health() << "\n";
+            std::cout << murloc->get_name() << "'s health: " << murloc->get_health() << "\n";
 
             if (murloc->get_health() <= 0) {
-                std::cout << "* Murloc is dead *\n";
+                std::cout << "* " << murloc->get_name() << " is dead *\n";
             }
 
         } else {
@@ -343,7 +341,7 @@ namespace Models {
         // Hero shall miss next attack
         int miss = (rand() % 5) + 1;
         if (miss == 1) {
-            std::cout << "* Hero missed *\n\n";
+            std::cout << "* " << hero->get_name_of_hero() << " missed *\n\n";
             return;
         }
 
@@ -368,10 +366,10 @@ namespace Models {
 
             kobold->set_health(kobold->get_health() + koboldArmor);
 
-            std::cout << "Kobold's health: " << kobold->get_health() << "\n";
+            std::cout << kobold->get_name() << "'s health: " << kobold->get_health() << "\n";
 
             if (kobold->get_health() <= 0) {
-                std::cout << "* Kobold is dead *\n";
+                std::cout << "* " << kobold->get_name() << " is dead *\n";
             }
 
         } else {
@@ -386,7 +384,7 @@ namespace Models {
         // Hero shall miss next attack
         int miss = (rand() % 5) + 1;
         if (miss == 1) {
-            std::cout << "* Hero missed *\n\n";
+            std::cout << "* " << hero->get_name_of_hero() << " missed *\n\n";
             return;
         }
 
@@ -424,6 +422,7 @@ namespace Models {
 
     void hero_stats(Hero *hero) {
         std::cout << "Your stats: \n";
+        std::cout << "\tName of Hero: " << hero->get_name_of_hero() << "\n";
         std::cout << "\tClass: " << hero->get_name_of_class() << "\n";
         std::cout << "\tDamage: " << hero->get_damage() << "\n";
         std::cout << "\tHealth: " << hero->get_health() << "\n";

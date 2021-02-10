@@ -56,9 +56,9 @@ namespace Views {
             case 4:
                 Models::battle(hero, 4);
                 break;
-            //case 5: //Non-working piece of code
-            //    Models::battle(*hero);
-            //    break;
+            case 5: //Non-working piece of code
+                Models::boss_battle(hero);
+                break;
         }
 
         std::cout << "Are you wanna go further ?\ny/n\t";
