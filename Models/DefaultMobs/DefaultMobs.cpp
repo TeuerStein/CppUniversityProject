@@ -2,4 +2,5 @@
 // Created by OLEKSANDR SOKOLOV on 12/26/20.
 //
 
-#include "EpicMobs.h"
+#include "Murloc.h"
+#include "Kobold.h"

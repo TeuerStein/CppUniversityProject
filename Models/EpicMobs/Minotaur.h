@@ -1,7 +1,7 @@
 #include <iostream>
 
-namespace Models{
-	class Minotaur {
+namespace EpicMobs {
+  class Minotaur {
 		std::string name = "Minotaur";
 		int damage;
 		int health;
@@ -56,10 +56,10 @@ namespace Models{
 		void set_lvl(int newLvl) {
 			lvl = newLvl;
 		}
-        
+
         void update_lvl(int modifier) {
             lvl = modifier;
-            
+
             if(lvl == 2) {
                 modifier_2();
             } else if(lvl == 3) {
@@ -77,7 +77,7 @@ namespace Models{
 
         void modifier_3() {
             modifier_2();
-            
+
             damage += 7;
             health += 12;
             armor += 5;
@@ -85,7 +85,7 @@ namespace Models{
 
         void modifier_4() {
             modifier_3();
-            
+
             damage += 9;
             health += 15;
             armor += 7;

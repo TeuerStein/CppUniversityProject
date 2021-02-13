@@ -8,7 +8,7 @@ namespace Models {
 
 		std::cout << "Please, enter a name for your Hero: ";
 		std::cin >> nameForHero;
-		
+
 		if(nameForHero != "") {
 			return nameForHero;
 		} else {

@@ -4,7 +4,7 @@
 #ifndef CPPUNIVERSITYPROJECT_DUNGEONBOSS_H
 #define CPPUNIVERSITYPROJECT_DUNGEONBOSS_H
 
-namespace Models{
+namespace BossOfDungeon{
     class DungeonMaster {
         std::string name = "Dungeon Master";
         int damage;
